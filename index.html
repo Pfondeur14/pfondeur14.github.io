@@ -9,96 +9,101 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Link to your custom styles (optional) -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zhl7ddg.css">
 </head>
 
-<body class="bg-white font-sans text-gray-900">
+<body class="bg-white font-sans text-gray-900" style="font-family: 'Futura PT', sans-serif;">
+    <div class="bg-gradient-to-r from-[#1d305c] to-[#4b3c69] text-white">
+        <!-- Navbar -->
+        <nav class="bg-gradient-to-b from-black to-transparent py-4">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-semibold">MyPortfolio</a>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-white hover:text-[#5C7C89]">About</a></li>
+                    <li><a href="#projects" class="text-white hover:text-[#5C7C89]">Projects</a></li>
+                    <li><a href="#contact" class="text-white hover:text-[#5C7C89]">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <!-- Navbar -->
-    <nav class="bg-[#1F4959] p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="#" class="text-white text-2xl font-semibold">MyPortfolio</a>
-            <ul class="flex space-x-6">
-                <li><a href="#about" class="text-white hover:text-[#5C7C89]">About</a></li>
-                <li><a href="#projects" class="text-white hover:text-[#5C7C89]">Projects</a></li>
-                <li><a href="#contact" class="text-white hover:text-[#5C7C89]">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        <!-- Hero Section -->
+        <section class="py-20">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-extrabold mb-4">Welcome to My Portfolio</h1>
+                <p class="text-xl mb-8">A glimpse into my work history and projects</p>
+                <a href="#contact" class="bg-[#FF6A00] text-white py-2 px-6 rounded-lg hover:bg-[#FF8C33]">Get In Touch</a>
+            </div>
+        </section>
 
-    <!-- Hero Section -->
-    <section class="bg-[#011425] text-white text-center py-16">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl font-extrabold mb-4">Welcome to My Portfolio</h1>
-            <p class="text-xl mb-8">A glimpse into my work and projects</p>
-            <a href="#contact" class="bg-[#5C7C89] text-white py-2 px-6 rounded-lg font-semibold hover:bg-[#1F4959]">Get In Touch</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-[#242424] mb-8">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <img src="" alt="Your photo" class="rounded-full w-40 h-40 mx-auto mb-6 md:mb-0 md:mr-8">
-                <div class="text-center md:text-left">
-                    <p class="text-lg text-[#242424]">Hello! I'm a passionate person with a knack for creating beautiful, functional code. I specialize in back-end development and have experience with various web technologies like HTML, CSS, and Django. I also love data analysis and know Python, Jupyter Notebooks and R Programming</p>
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-white mb-8">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="" alt="Your photo" class="rounded-full w-40 h-40 mx-auto mb-6 md:mb-0 md:mr-8">
+                    <div class="text-center md:text-left">
+                        <p class="text-lg text-white">Hello! I'm a passionate person with a knack for creating beautiful, functional code. I specialize in back-end development and have experience with various web technologies like HTML, CSS, and Django. I also love data analysis and know Python, Jupyter Notebooks and R Programming</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-[#1f4959]">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-[#242424] mb-8">My Projects</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="bg-[#011425] p-6 rounded-lg shadow-md">
-                    <img src="" alt="Project 1" class="w-full h-56 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold text-[#242424] mb-2">Project 1</h3>
-                    <p class="text-[#242424]">A description of your project. Explain what it is about and the technologies you used.</p>
-                </div>
-                <div class="bg-[#011425] p-6 rounded-lg shadow-md">
-                    <img src="" alt="Project 2" class="w-full h-56 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold text-[#242424] mb-2">Project 2</h3>
-                    <p class="text-[#242424]">A description of your project. Explain what it is about and the technologies you used.</p>
-                </div>
-                <div class="bg-[#011425] p-6 rounded-lg shadow-md">
-                    <img src="" alt="Project 3" class="w-full h-56 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-semibold text-[#242424] mb-2">Project 3</h3>
-                    <p class="text-[#242424]">A description of your project. Explain what it is about and the technologies you used.</p>
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-white mb-8">My Projects</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A]">
+                        <img src="" alt="Project 1" class="w-full h-56 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Project 1</h3>
+                        <p class="text-white">A description of your project. Explain what it is about and the technologies you used.</p>
+                    </div>
+                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A]">
+                        <img src="" alt="Project 2" class="w-full h-56 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Project 2</h3>
+                        <p class="text-white">A description of your project. Explain what it is about and the technologies you used.</p>
+                    </div>
+                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A]">
+                        <img src="" alt="Project 3" class="w-full h-56 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Project 3</h3>
+                        <p class="text-white">A description of your project. Explain what it is about and the technologies you used.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-[#242424] mb-8">Contact Me</h2>
-            <div class="max-w-lg mx-auto">
-                <form action="#" method="POST" class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-[#242424]">Your Name</label>
-                        <input type="text" id="name" name="name" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959]" required>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-[#242424]">Your Email</label>
-                        <input type="email" id="email" name="email" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959]" required>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-[#242424]">Your Message</label>
-                        <textarea id="message" name="message" rows="4" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959]" required></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-[#1F4959] text-white py-3 rounded-lg hover:bg-[#011425]">Send Message</button>
-                </form>
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-white mb-8">Contact Me</h2>
+                <div class="max-w-lg mx-auto">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-white">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959]" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-white">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959]" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-white">Your Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959]" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#FF6A00] text-white py-3 rounded-lg hover:bg-[#FF8C33]">Send Message</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#1F4959] text-white text-center py-6">
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="bg-gradient-to-b from-transparent to-black py-4">
+            <p>&copy; 2025 A. Patricia Fondeur. All rights reserved.</p>
+        </footer>
+    </div>
+    <!--<button class="bg-[#6B5B95] text-white py-2 px-6 rounded-lg hover:bg-[#8A7BB0]">
+    Secondary Button
+    </button>-->
 
 </body>
 
