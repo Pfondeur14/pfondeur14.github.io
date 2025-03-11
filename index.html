@@ -13,10 +13,9 @@
 <body class="bg-white font-sans text-gray-900  overflow-x-hidden" style="font-family: 'Montserrat', sans-serif;">
     <div class="bg-gradient-to-r from-[#1d305c] to-[#4b3c69] text-white">
         <!-- Navbar -->
-        <nav class="bg-gradient-to-b from-black to-transparent py-8 px-4 md:px-6">
-            <div class="w-full md:max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center overflow-x-auto">
-                <a href="#" class="text-white text-3xl font-semibold px-4 md:px-6">PORTFOLIO</a>
-                <ul class="flex space-x-6">
+        <nav class="bg-gradient-to-b from-black to-transparent py-4 px-4 md:px-6">
+            <div class="w-full md:max-w-7xl mx-auto px-4 md:px-6 flex justify-end items-center overflow-x-auto relative z-10">
+                <ul class="flex space-x-6 font-semibold">
                     <li><a href="#projects" class="text-white hover:text-[#5C7C89]">Projects</a></li>
                     <li><a href="#resume" class="text-white hover:text-[#5C7C89]">Resume</a></li>
                     <li><a href="#contact" class="text-white hover:text-[#5C7C89]">Contact</a></li>
@@ -25,22 +24,25 @@
         </nav>
 
         <!-- Hero Section -->
-        <section class="py-20 flex flex-col md:flex-row items-center justify-between w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0">
-            <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-                <h1 class="text-5xl sm:text-6xl md:text-7xl mb-4">PATRICIA FONDEUR</h1>
-                <h1 class="text-2xl font-bold mb-2">About Me</h1>
-                <p class="text-md text-white mb-4 md:mb-4">I'm a data analyst and back-end developer, skilled in Python, Django, R, Spreadsheets and a solid foundation in HTML, Tailwind, and CSS. Whether it's diving deep into analytics or crafting solutions to make your workflow smoother, I bring a keen eye for detail and a passion for problem-solving. Here is a glimpse into my work history and projects.</p>
-                <a href="#contact" class="bg-[#FF6A00] text-white py-2 px-6 rounded-lg hover:bg-[#FF8C33]">Get In Touch</a>
-            </div>
-            <div class="w-full md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0 flex-shrink-0">
-                <img src="/assets/pictures/IMG_5282.PNG" alt="My photo" class="rounded-full w-96 h-96 object-cover mx-auto sm:w-80 sm:h-80">
+         <section class="flex items-center justify-center w-full h-3/4">
+            <div class="flex flex-col md:flex-row items-center justify-center w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0 relative z-20">
+                <!-- Text Section -->
+                <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                    <h1 class="text-5xl font-semibold sm:text-6xl md:text-[95px] mb-4" style="line-height: .8;">PATRICIA FONDEUR</h1>
+                    <p class="text-md text-white mb-4 md:mb-4">I'm a back-end developer and data analyst, skilled in Python, Django, R, Spreadsheets and a solid foundation in HTML, Tailwind, and CSS.</p>
+                    <a href="#contact" class="bg-[#FF6A00] text-white py-2 px-6 rounded-lg hover:bg-[#FF8C33]">Get In Touch</a>
+                </div>
+                <!-- Image Section -->
+                <div class="w-full md:w-1/2 flex justify-center md:justify-center mt-6 md:mt-0 flex-shrink-0">
+                    <img src="/assets/pictures/hero_picture.png" alt="My photo" class="w-[400px] h-[400px] object-cover mx-auto sm:w-[400px] sm:h-[400px] -mt-12 md:-mt-6">
+                </div>
             </div>
         </section>
 
         <!-- Python and Django Projects Section -->
         <section id="projects" class="py-20">
             <div class="w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0">
-                <h2 class="text-3xl font-bold text-center text-white mb-8">Python and Django Projects</h2>
+                <h2 class="text-3xl font-semibold text-center text-white mb-8">Python and Django Projects</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A] flex flex-col">
                         <img src="/assets/pictures/book_project.png" alt="Project 1" class="w-full h-56 object-cover rounded-lg mb-4">
@@ -92,7 +94,7 @@
         </section>
 
         <!-- Resume Section -->
-        <section id="resume" class="pt-20 pb-0 px-4 md:px-6 sm:px-0">
+        <section id="resume" class="pt-10 pb-20 pb-0 px-4 md:px-6 sm:px-0">
             <div class="w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0">
                 <h2 class="text-3xl font-bold text-center text-white mb-8">My Resume</h2>
                 <div class="flex justify-center items-center">
