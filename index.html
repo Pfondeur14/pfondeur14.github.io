@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="https://use.typekit.net/zhl7ddg.css">
 </head>
 
-<body class="bg-white font-sans text-gray-900  overflow-x-hidden" style="font-family: 'Montserrat', sans-serif;">
-    <div class="bg-gradient-to-r from-[#1d305c] to-[#4b3c69] text-white">
+<body class="bg-white font-sans text-gray-900 overflow-x-hidden" style="font-family: 'Montserrat', sans-serif;">
+    <div class="bg-[#EA81B2] text-black">
         <!-- Navbar -->
-        <nav class="bg-gradient-to-b from-black to-transparent py-4 px-4 md:px-6">
-            <div class="w-full md:max-w-7xl mx-auto px-4 md:px-6 flex justify-end items-center overflow-x-auto relative z-10">
-                <ul class="flex space-x-6 font-semibold">
-                    <li><a href="#projects" class="text-white hover:text-[#5C7C89]">Projects</a></li>
-                    <li><a href="#resume" class="text-white hover:text-[#5C7C89]">Resume</a></li>
-                    <li><a href="#contact" class="text-white hover:text-[#5C7C89]">Contact</a></li>
+        <nav class="bg-black py-4 px-4 md:px-6">
+            <div class="w-full md:max-w-7xl mx-auto px-4 md:px-4 flex justify-end items-center overflow-x-auto relative z-10">
+                <ul class="flex space-x-6">
+                    <li><a href="#projects" class="text-white hover:text-[#0CD0F2]">Projects</a></li>
+                    <li><a href="#resume" class="text-white hover:text-[#0CD0F2]">Resume</a></li>
+                    <li>
+                        <div class="mt-auto flex items-center justify-left gap-x-6">
+                            <a href="#contact" class="rounded-[12px] bg-[#FDF009] px-3.5 py-1 text-sm font-semibold text-black shadow-xs hover:bg-[#0CD0F2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">CONTACT</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -28,13 +32,15 @@
             <div class="flex flex-col md:flex-row items-center justify-center w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0 relative z-20">
                 <!-- Text Section -->
                 <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-                    <h1 class="text-5xl font-semibold sm:text-6xl md:text-[95px] mb-4" style="line-height: .8;">PATRICIA FONDEUR</h1>
+                    <h1 class="text-5xl font-black sm:text-6xl md:text-[95px] mb-4 mt-4" style="line-height: .8;">PATRICIA FONDEUR</h1>
                     <p class="text-md text-white mb-4 md:mb-4">I'm a back-end developer and data analyst, skilled in Python, Django, R, Spreadsheets and a solid foundation in HTML, Tailwind, and CSS.</p>
-                    <a href="#contact" class="bg-[#FF6A00] text-white py-2 px-6 rounded-lg hover:bg-[#FF8C33]">Get In Touch</a>
+                    <div class="mt-auto flex items-center justify-left gap-x-6">
+                        <a href="#contact" class="rounded-[12px] bg-[#FDF009] px-3.5 py-1 text-sm font-semibold text-black shadow-xs hover:bg-[#0CD0F2] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">GET IN TOUCH</a>
+                    </div>
                 </div>
                 <!-- Image Section -->
                 <div class="w-full md:w-1/2 flex justify-center md:justify-center mt-6 md:mt-0 flex-shrink-0">
-                    <img src="/assets/pictures/hero_picture.png" alt="My photo" class="w-[400px] h-[400px] object-cover mx-auto sm:w-[400px] sm:h-[400px] -mt-12 md:-mt-6">
+                    <img src="/assets/pictures/hero_picture.png" alt="My photo" class="w-[350px] h-[350px] object-cover mx-auto sm:w-[500px] sm:h-[500px] -mt-12 md:-mt-8">
                 </div>
             </div>
         </section>
@@ -42,102 +48,142 @@
         <!-- Python and Django Projects Section -->
         <section id="projects" class="py-20">
             <div class="w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0">
-                <h2 class="text-3xl font-semibold text-center text-white mb-8">Python and Django Projects</h2>
+                <h2 class="text-3xl font-semibold text-center text-black mb-8">Python and Django Projects</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A] flex flex-col">
-                        <img src="/assets/pictures/book_project.png" alt="Project 1" class="w-full h-56 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Book Search</h3>
-                        <p class="text-white">This is a Python program that uses the Google Books API adding user input to search for book Titles. Results are printed on a PDF including the Title, Author, Category, Page Count, average rating and an Image of the Book cover, if the book is not found the program will let the user know the information is not available. Users will be able to continue searching for book titles until they decide to exit the program.</p>
-                        <a href="https://github.com/Pfondeur14/python_book_project" class="text-[#FF6A00] hover:underline mt-auto">See Github Repo</a>
+                    <div class="bg-[#0CD0F2] text-black p-6 rounded-[25px] hover:bg-[#009EB5] flex flex-col">
+                        <h3 class="text-xl font-semibold text-bkack mb-2">Book Search</h3>
+                        <img src="/assets/pictures/book_project.png" alt="Project 1" class="w-full h-56 md:object-cover rounded-[10px] mb-4">
+                        <p class="text-black font-semibold">Search for books using Google Books’ API and get a snapshot of your favorite titles.</p>
+                        <ul role="list" class="mt-2 mb-2 py-2 text-sm/6 text-black">
+                            <li class="flex gap-x-3 border-b border-black">Python</li>
+                            <li class="flex gap-x-3 border-b border-black">Postman</li>
+                            <li class="flex gap-x-3 border-b border-black">Google Books API</li>
+                            <li class="flex gap-x-3 border-b border-black">Pytest</li>
+                        </ul>
+                        <div class="mt-auto flex items-center justify-left gap-x-6">
+                            <a href="https://github.com/Pfondeur14/python_book_project" class="border-box border-2 border-black rounded-[12px] bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:border-2 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">See Github Repo</a>
+                        </div>
                     </div>
-                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A] flex flex-col">
-                        <img src="/assets/pictures/commerce_project.png" alt="Project 2" class="w-full h-56 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Commerce Biding site</h3>
-                        <p class="text-white">Using Django I created and Ebay like e-commerce auctions site that allows users to post auction listings, place bids and add/remove listings to a "watchlist" page, and add comments. The users can visit a page that displays all active listings or filter by category.</p>
-                        <a href="#contact" class="text-[#FF6A00] hover:underline mt-auto">Request Access to Github Repo</a>
+                    <div class="bg-[#0CD0F2] text-white p-6 rounded-[25px] hover:bg-[#009EB5] flex flex-col">
+                        <h3 class="text-xl font-semibold text-black mb-2">Commerce Biding site</h3>
+                        <img src="/assets/pictures/commerce_project.png" alt="Project 2" class="w-full h-56 md:object-cover rounded-[10px] mb-4">
+                        <p class="text-black font-semibold">EBay like e-commerce. Post, bid, comment and watch items for sale.</p>
+                        <ul role="list" class="mt-2 mb-2 py-2 text-sm/6 text-black">
+                            <li class="flex gap-x-3 border-b border-black">Python</li>
+                            <li class="flex gap-x-3 border-b border-black">Django</li>
+                            <li class="flex gap-x-3 border-b border-black">HTML</li>
+                            <li class="flex gap-x-3 border-b border-black">CSS</li>
+                        </ul>
+                        <div class="mt-auto flex items-center justify-left gap-x-6">
+                            <a href="#contact" class="border-box border-2 border-black rounded-[12px] bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:border-2 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Request Access to Github Repo</a>
+                        </div>                    
                     </div>
-                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A] flex flex-col">
-                        <img src="/assets/pictures/network_project.png" alt="Project 3" class="w-full h-56 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Social Network</h3>
-                        <p class="text-white">Using Python, JavaScript, HTML and CSS I created a social network that allows users to make posts and like posts. Users have a profile page and can follow or unfollow other users. The site shows the number of follows and followers a profile has and the entire page uses pagination to keep things organized.</p>
-                        <a href="#contact" class="text-[#FF6A00] hover:underline mt-auto">Request Access to Github Repo</a>
+                    <div class="bg-[#0CD0F2] text-white p-6 rounded-[25px] hover:bg-[#009EB5] flex flex-col">
+                        <h3 class="text-xl font-semibold text-black mb-2">Social Network</h3>
+                        <img src="/assets/pictures/network_project.png" alt="Project 3" class="w-full h-56 md:object-cover rounded-[10px] mb-4">
+                        <p class="text-black font-semibold">Social media network. Share posts, like, and follow.</p>
+                        <ul role="list" class="mt-2 mb-2 py-2 text-sm/6 text-black">
+                            <li class="flex gap-x-3 border-b border-black">Python</li>
+                            <li class="flex gap-x-3 border-b border-black">Django</li>
+                            <li class="flex gap-x-3 border-b border-black">JavaScript</li>
+                            <li class="flex gap-x-3 border-b border-black">HTML</li>
+                            <li class="flex gap-x-3 border-b border-black">CSS</li>
+                        </ul>
+                        <div class="mt-auto flex items-center justify-left gap-x-6">
+                            <a href="#contact" class="border-box border-2 border-black rounded-[12px] bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:border-2 hover:border-white">Request Access to Github Repo</a>
+                        </div> 
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- R Projects Section -->
-        <section id="r-projects" class="py-20">
+        <section id="r-projects" class="pb-20">
             <div class="w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0">
-                <h2 class="text-3xl font-bold text-center text-white mb-8">R and Data Analysis Projects</h2>
+                <h2 class="text-3xl font-bold text-center text-black mb-8">R and Data Analysis Projects</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A] flex flex-col">
-                        <img src="/assets/pictures/library_search.png" alt="Project 1" class="w-full h-56 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Library Search</h3>
-                        <p class="text-white">This script uses column selection and variable assignment to enable a flexible search interface, pattern matching, allowing sub-string searches in the dataset along with handling multiple matches. Conditional logic to differentiate search strategies based on user input, including handling searches across multiple data sources, and sub-setting of data frames to return relevant rows based on user queries, improving data extraction efficiency.</p>
-                        <a href="https://github.com/Pfondeur14/library_search" class="text-[#FF6A00] hover:underline mt-auto">See Github Repo</a>
+                    <div class="bg-[#FDF009] text-black p-6 rounded-[25px] hover:bg-[#D1B400] flex flex-col">
+                        <h3 class="text-xl font-semibold text-bkack mb-2">Library Search</h3>
+                        <img src="/assets/pictures/library_search.png" alt="Project 4" class="w-full h-56 md:object-cover rounded-[10px] mb-4">
+                        <p class="text-black text-sm/6">This script uses column selection and variable assignment to enable a flexible search interface that allows sub-string searches in the dataset along with handling multiple matches. Conditional logic is used to differentiate search strategies based on user input improving data extraction efficiency.</p>
+                        <div class="pt-2 mt-auto flex items-center justify-left gap-x-6">
+                            <a href="https://github.com/Pfondeur14/library_search" class="border-box border-2 border-black rounded-[12px] bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:border-2 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">See Github Repo</a>
+                        </div>
                     </div>
-                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A] flex flex-col">
-                        <img src="/assets/pictures/doc_word_count.png" alt="Project 2" class="w-full h-56 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Word Count</h3>
-                        <p class="text-white">Visualizing the frequency of words in a document can help researchers identify the most prominent themes and key concepts, providing a visual overview of the content and helping them understand the overall focus and sentiment of the document at a glance. </p>
-                        <a href="https://github.com/Pfondeur14/word_count" class="text-[#FF6A00] hover:underline mt-auto">See Github Repo</a>
+                    <div class="bg-[#FDF009] text-white p-6 rounded-[25px] hover:bg-[#D1B400] flex flex-col">
+                        <h3 class="text-xl font-semibold text-black mb-2">Word Count</h3>
+                        <img src="/assets/pictures/doc_word_count.png" alt="Project 5" class="w-full h-56 md:object-cover rounded-[10px] mb-4">
+                        <p class="text-black text-sm/6">By visualizing the frequency of words in a document this script can help researchers identify the most prominent themes and key concepts, providing a visual overview of the content and helping them understand the overall focus and sentiment of the document at a glance.</p>
+                        <div class="pt-2 mt-auto flex items-center justify-left gap-x-6">
+                            <a href="https://github.com/Pfondeur14/word_count" class="border-box border-2 border-black rounded-[12px] bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:border-2 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">See Github Repo</a>
+                        </div>                    
                     </div>
-                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A] flex flex-col">
-                        <img src="/assets/pictures/g7_co2_emissions.png" alt="Project 3" class="w-full h-56 object-cover rounded-lg mb-4">
-                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Exploratory Data Analysis</h3>
-                        <p class="text-white">Using data for CO2 Emissions p/Capita Progression from 1950 - 2022: This program cleans, filters and visualizes the data resulting in a line graph showcasing CO2 emissions for the G7 countries for the last 72 years, providing the user with a snapshot of the data.</p>
-                        <a href="https://github.com/Pfondeur14/eda" class="text-[#FF6A00] hover:underline mt-auto">See Github Repo</a>
+                    <div class="bg-[#FDF009] text-white p-6 rounded-[25px] hover:bg-[#D1B400] flex flex-col">
+                        <h3 class="text-xl font-semibold text-black mb-2">Exploratory Data Analysis</h3>
+                        <img src="/assets/pictures/g7_co2_emissions.png" alt="Project 6" class="w-full h-56 md:object-cover rounded-[10px] mb-4">
+                        <p class="text-black text-sm/6">Using data for CO2 Emissions p/Capita Progression from 1950 - 2022: This script cleans, filters and visualizes the data resulting in a line graph showcasing CO2 emissions for the G7 countries for the last 72 years, providing the user with a snapshot of the data.</p>
+                        <div class="pt-2 mt-auto flex items-center justify-left gap-x-6">
+                            <a href="https://github.com/Pfondeur14/eda" class="border-box border-2 border-black rounded-[12px] bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:border-2 hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">See Github Repo</a>
+                        </div> 
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Resume Section -->
-        <section id="resume" class="pt-10 pb-20 pb-0 px-4 md:px-6 sm:px-0">
+        <section id="resume" class="pb-20 px-4 md:px-6 sm:px-0">
             <div class="w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0">
-                <h2 class="text-3xl font-bold text-center text-white mb-8">My Resume</h2>
+                <h2 class="text-3xl font-bold text-center text-black mb-8">My Resume</h2>
                 <div class="flex justify-center items-center">
-                    <div class="bg-[#3A4B72] text-white p-6 rounded-lg border-2 border-[#4B3C69] hover:bg-[#4B5E7A] w-full md:w-2/3">
-                        <iframe src="/assets/pdfs/resume2025.pdf" alt="Resume 2025" class="w-full h-56 object-contain rounded-lg mb-4"></iframe>
-                        <h3 class="text-xl font-semibold text-[#FF6A00] mb-2">Resume</h3>
-                        <a href="/assets/pdfs/resume2025.pdf" download="resume2025.pdf" target="_blank">Download PDF</a>
+                    <div class="bg-[#0CD0F2] text-white p-6 rounded-[25px] hover:bg-[#009EB5] w-full md:w-2/3">
+                        <iframe src="/assets/pdfs/resume2025.pdf" alt="Resume 2025" class="w-full h-56 rounded-[25px] mb-4 border-none" style="background-color: transparent;"></iframe>
+                        <h3 class="text-xl font-semibold text-black mb-2">Resume</h3>
+                        <a class="hover:underline" href="/assets/pdfs/resume2025.pdf" download="resume2025.pdf" target="_blank">Download PDF</a>
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- Contact Section -->
-        <section id="contact" class="py-20 px-4 md:px-6 sm:px-0">
-                <!-- Construction Banner with Contact Email -->
-                <div class="bg-yellow-400 text-black text-center py-3 mb-6 font-semibold">
-                    <p>This section is under construction. In the meantime the following form will be submitted using google forms.</p>
-                </div>
+        <section id="contact" class="pb-20 px-4 md:px-6 sm:px-0">
+            <!-- Construction Banner with Contact Email -->
             <div class="max-w-7xl mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center text-white mb-8">Contact Me</h2>
-                <div class="max-w-lg mx-auto">
-                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSd4cfJxr1bxgCWH0C5nFRMqoCc5RDgVvskF32M2ZWCOQJjM3g/formResponse" autocomplete="off" method="POST" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-white">Your Name</label>
-                            <input type="text" id="name" name="entry.339857391" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959] text-black" required>
+                <h2 class="text-3xl font-bold text-center text-black mb-8">Contact Me</h2>
+                <div class="flex items-center justify-center w-full h-3/4">
+                    <div class="flex flex-col md:flex-row items-center justify-center w-full md:max-w-7xl mx-auto px-4 md:px-6 sm:px-0 relative z-20">
+                         <!-- Image Section -->
+                        <div class="w-full md:w-1/2 flex justify-center mt-6 md:mt-0 flex-shrink-0 mb-12 pd-6 md:mb-0 md:pb-0 mx-6">
+                            <img src="/assets/pictures/contact_picture.png" alt="My photo" class="w-[300px] h-[300px] object-cover mx-auto sm:w-[500px] sm:h-[500px] -mb-12 md:-mb-4">
                         </div>
-                        <div>
-                            <label for="email" class="block text-white">Your Email</label>
-                            <input type="text" id="email" name="entry.211285215" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959] text-black" required>
+                        <!-- Form Section -->
+                        <div class="bg-black text-white p-6 rounded-[25px] md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSd4cfJxr1bxgCWH0C5nFRMqoCc5RDgVvskF32M2ZWCOQJjM3g/formResponse" autocomplete="off" method="POST" class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-white">Your Name</label>
+                                    <input type="text" id="name" name="entry.339857391" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959] text-black" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-white">Your Email</label>
+                                    <input type="text" id="email" name="entry.211285215" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959] text-black" required>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-white">Your Message</label>
+                                    <textarea id="message" name="entry.975513266" rows="4" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959] text-black" required></textarea>
+                                </div>
+                                <div class="mt-auto flex items-center justify-center gap-x-6">
+                                    <button type="submit" class="rounded-[12px] w-1/2 md:w-1/3 bg-[#FDF009] text-black font-semibold py-3 rounded-lg hover:bg-[#0CD0F2]">Send Message</button>
+                                </div>
+                            </form>
                         </div>
-                        <div>
-                            <label for="message" class="block text-white">Your Message</label>
-                            <textarea id="message" name="entry.975513266" rows="4" class="w-full p-3 border border-[#5C7C89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1F4959] text-black" required></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-[#FF6A00] text-white py-3 rounded-lg hover:bg-[#FF8C33]">Send Message</button>
-                    </form>
+                        
+                    </div>    
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="bg-gradient-to-b from-transparent to-black py-4 sm:px-0">
-            <p>&copy; 2025 A. Patricia Fondeur. All rights reserved.</p>
+        <footer class="bg-black py-4 sm:px-1">
+            <p class="text-white">&copy; 2025 A. Patricia Fondeur. All rights reserved.</p>
         </footer>
     </div>
 </body>
